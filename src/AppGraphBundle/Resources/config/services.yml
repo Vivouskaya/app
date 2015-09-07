@@ -1,0 +1,4 @@
+services:
+#    app_graph.example:
+#        class: AppGraphBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
