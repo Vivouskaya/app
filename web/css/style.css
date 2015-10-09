@@ -70,3 +70,62 @@
 	margin-top: -36%;
 }
 
+.card11 , .card12 , .card21 ,.card22 ,.card31 ,.card32 ,.card41 ,.card42 ,.card51 ,.card52 ,.card61 ,.card62 ,.card71 ,.card72 ,.card81 ,.card82 {
+	height: 12%;
+	width:8%;
+	border: solid;
+	border-radius: 15%;
+	
+}
+
+.card11 {
+	margin-left: 5%;
+}
+
+.card11 , .card12 {
+	
+	display: inline-block;
+	
+}
+
+.card21 , .card22 {
+	
+	display: inline-block;
+	
+}
+
+.card31 , .card32 {
+	
+	display: inline-block;
+	
+}
+
+.card41 , .card42 {
+	
+	display: inline-block;
+	
+}
+
+.card51 , .card52 {
+	
+	display: inline-block;
+	
+}
+
+.card61 , .card62 {
+	
+	display: inline-block;
+	
+}
+
+.card71 , .card72 {
+	
+	display: inline-block;
+	
+}
+
+.card81 , .card82 {
+	
+	display: inline-block;
+	
+}
