@@ -127,12 +127,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // app_graph_homepage
+        // casino_poker_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'app_graph_homepage');
+                return $this->redirect($pathinfo.'/', 'casino_poker_homepage');
             }
 
+            return array (  '_controller' => 'Casino\\PokerBundle\\Controller\\DefaultController::indexAction',  '_route' => 'casino_poker_homepage',);
+        }
+
+        // app_graph_homepage
+        if ($pathinfo === '/graph') {
             return array (  '_controller' => 'AppGraphBundle\\Controller\\DefaultController::chartAction',  '_route' => 'app_graph_homepage',);
         }
 

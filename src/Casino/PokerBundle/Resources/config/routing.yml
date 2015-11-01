@@ -1,0 +1,3 @@
+casino_poker_homepage:
+    path:     /
+    defaults: { _controller: CasinoPokerBundle:Default:index }

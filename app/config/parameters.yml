@@ -1,12 +1,12 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_host: *******
+    database_host: localhost
     database_port: null
-    database_name: ***********
-    database_user: *****
-    database_password: ****
+    database_name: symfony
+    database_user: root
+    database_password: weed1990
     mailer_transport: smtp
-    mailer_host: *********
+    mailer_host: null
     mailer_user: null
     mailer_password: null
     secret: ThisTokenIsNotSoSecretChangeIt

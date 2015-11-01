@@ -1,3 +1,7 @@
+casino_poker:
+    resource: "@CasinoPokerBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app_graph:
     resource: "@AppGraphBundle/Resources/config/routing.yml"
     prefix:   /

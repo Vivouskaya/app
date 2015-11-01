@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new AppGraphBundle\AppGraphBundle(),
             new Ob\HighchartsBundle\ObHighchartsBundle(),
+            new Casino\PokerBundle\CasinoPokerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
