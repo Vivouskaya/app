@@ -15,77 +15,160 @@
 {% block Body %}
   <body>
     <div class="container" id="casinotable">
-
-    <!--	
-    	<div  class="profil1"></div>
-    	<div class="profil2"></div>
-    	<div class="profil3"></div>
-    	<div class="profil4"></div>
-    	<div class="profil5"></div>
-    	<div class="profil6""></div>
-    	<div class="profil7"></div>
-    	<div class="profil8"></div>    	
-        
-    -->
-   
 	<div class="table-responsive">
-   <img id="roulette" src="{{asset('img/roulette.png')}}"></img>
-   <div id="score">{{ score }}</div>
+   <div id="roulet"></div>
+   <div id="status"></div>
+   <div id="score"></div>
 	  <div style="margin-left: 20%; height:60%; width: 60%;">
-	  	<div class="table-bordered col-md-12">
-	  		<button style="height:15%; width:115%; margin-left: -7.5%;">1,2,3,4 MANQUE 1,2,3,4</button>
+	  	<div class=" col-md-12">
+	  		<button class="manque" style="height:15%; width:115%; margin-left: -7.5%;">1,2,3,4 MANQUE 1,2,3,4</button>
 	  	</div>
-	  	<div style="margin-top: 5%; margin-bottom: 5%; height:90%; width: 15%;" class="table-bordered col-md-1">
-	  		<button style="height:100%; width: 32px; margin-left: -13.5px;"><div id="triangle-1"></div><div id="triangle-2"></div></button>
+	  	<div style="margin-top: 5%; margin-bottom: 5%; height:90%; width: 15%;" class=" col-md-1">
+	  		<button class="noir" style="height:100%; width: 32px; margin-left: -13.5px;"><div id="triangle-1"></div><div id="triangle-2"></div></button>
 	  	</div>
 	  	<div style="margin-top: 5%; margin-bottom: 5%;width: 20%; height:80%;" class=" col-md-1">
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  <button style="height:20%; width:100%;">1</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  <button class="un" style="height:20%; width:100%;">1</button>
   		  </div>
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-			<button style="height:20%; width:100%">3</button>
+  		  <div style="margin-top: 10px;" class=" row">
+			<button class="trois" style="height:20%; width:100%">3</button>
   		  </div>
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  	<button style="height:20%; width: 100%;">6</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  	<button class="six" style="height:20%; width: 100%;">6</button>
   		  </div>
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  	<button style="height:20%; width: 100%;">8</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  	<button class="huit" style="height:20%; width: 100%;">8</button>
   		  </div>
 	  	</div>
 	  	<div style="margin-top: 5%; margin-bottom: 5%; width: 30%;height:80%;" class="col-md-1">
-  		  <div style="height: 70px; margin-top: 3px;" class="table-bordered row">
-  		  	<button style="height:100%; width: 100%;">IMPAIR<br/>1,3,5,7,9</button>
+  		  <div style="height: 70px; margin-top: 3px;" class=" row">
+  		  	<button class="impair" style="height:100%; width: 100%;">IMPAIR<br/>1,3,5,7,9</button>
   		  </div>
-  		  <div style="height: 70px; margin-top: 3px;" class="table-bordered row">
-  		  	<button style="height:100%; width: 100%;"><div class="cercle">5</div></button>
+  		  <div style="height: 70px; margin-top: 3px;" class=" row">
+  		  	<button class="cinq" style="height:100%; width: 100%;"><div class="cercle">5</div></button>
   		  </div>
-  		  <div style="height: 70px; margin-top: 3px;" class="table-bordered row">
-  		  	<button style="height:100%; width: 100%;">PAIR<br/>2,4,6,8</button>
+  		  <div style="height: 70px; margin-top: 3px;" class=" row">
+  		  	<button class="pair" style="height:100%; width: 100%;">PAIR<br/>2,4,6,8</button>
   		  </div>
 	  	</div>
 	  	<div style="margin-top: 5%; margin-bottom: 5%;width: 20%; height:80%;" class="col-md-1">
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  	<button style="height:20%; width: 100%;">2</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  	<button class="deux" style="height:20%; width: 100%;">2</button>
   		  </div>
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  	<button style="height:20%; width: 100%;">4</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  	<button class="quatre" style="height:20%; width: 100%;">4</button>
   		  </div>
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  	<button style="height:20%; width: 100%;">7</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  	<button class="sept" style="height:20%; width: 100%;">7</button>
   		  </div>
-  		  <div style="margin-top: 10px;" class="table-bordered row">
-  		  	<button style="height:20%; width: 100%;">9</button>
+  		  <div style="margin-top: 10px;" class=" row">
+  		  	<button class="neuf" style="height:20%; width: 100%;">9</button>
   		  </div>
 	  	</div>
-	  	<div style="margin-top: 5%; margin-bottom: 5%; height:90%; width: 15%;" class="table-bordered col-md-1">
-	  		<button style="height:100%; width:32px; margin-left: -14px; padding:10px">
+	  	<div style="margin-top: 5%; margin-bottom: 5%; height:90%; width: 15%;" class=" col-md-1">
+	  		<button class="rouge" style="height:100%; width:32px; margin-left: -14px; padding:10px">
         <div class="centerRed"><div id="triangle-3"></div><div id="triangle-4"></div></div></button>
 	  	</div>
-	  	<div class="table-bordered col-md-12">
-	  		<button style="height:15%; width:114%; margin-left: -7%;">6,7,8,9 PASSE 6,7,8,9</button>
+	  	<div class=" col-md-12">
+	  		<button class="passe" style="height:15%; width:114%; margin-left: -7%;">6,7,8,9 PASSE 6,7,8,9</button>
 	  	</div>
 	  </div>
 	</div>
     </div>
+
+<p id="menu"></p>
+
+<script type="text/javascript">
+
+$(function(){
+    var NewContent='<li id="wessJeton"  class="jeton"></li>'
+    $(".passe").click(function(){
+        $(".passe").after(NewContent);
+    });
+    $(".rouge").click(function(){
+        $(".rouge").after(NewContent);
+    });
+    $(".neuf").click(function(){
+        $(".neuf").after(NewContent);
+    });
+    $(".sept").click(function(){
+        $(".sept").after(NewContent);
+    });
+    $(".quatre").click(function(){
+        $(".quatre").after(NewContent);
+    });
+    $(".deux").click(function(){
+        $(".deux").after(NewContent);
+    });
+    $(".pair").click(function(){
+        $(".pair").after(NewContent);
+    });
+    $(".cinq").click(function(){
+        $(".cinq").after(NewContent);
+    });
+     $(".impair").click(function(){
+        $(".impair").after(NewContent);
+    });
+    $(".huit").click(function(){
+        $(".huit").after(NewContent);
+    });
+    $(".six").click(function(){
+        $(".six").after(NewContent);
+    });
+    $(".trois").click(function(){
+        $(".trois").after(NewContent);
+    });
+    $(".un").click(function(){
+        $(".un").after(NewContent);
+    });
+    $(".noir").click(function(){
+        $(".noir").after(NewContent);
+    });
+});
+
+</script>
+ 
+<script type="text/javascript">
+
+	document.getElementById('roulet').innerHTML = "<img id='roulette' src='{{asset('img/roulette.gif')}}'></img>";
+	document.getElementById('status').innerHTML ='Rien ne va plus!';
+	setTimeout(function(){document.getElementById('status').innerHTML ='Les jeux sont faits';}, 1500);
+	
+	
+	var j = Math.floor(Math.random() * (70-40) + 40);
+	
+	function lancerDeBoule(n) {
+	
+		if(n!=j){
+			
+			var de1=Math.floor(Math.random()*9)+1;
+			if (de1 == 1 | de1 ==  3 | de1 == 6 | de1 ==  8){
+				document.getElementById('score').innerHTML ="<div style='background-color: black'  id='fff'>" + de1 + "</div>";
+			}
+			else if(de1 == 5) {
+				document.getElementById('score').innerHTML ="<div style='background-color: yellow; color: black;'  id='fff'>" + de1 + "</div>";
+			}
+			else {
+				document.getElementById('score').innerHTML ="<div style='background-color:  red' id='fff'>" + de1 + "</div>";
+			}
+			
+			
+			setTimeout(function(){lancerDeBoule(n+1)}, 80);
+			
+		}
+		
+		else{
+		
+			document.getElementById('roulet').innerHTML = "<img id='roulette' src='{{asset('img/roulette.png')}}'></img>";
+			document.getElementById('status').innerHTML='Fini';
+		}
+	}
+				
+	lancerDeBoule(1);
+
+</script>
+ 
+
+    
   </body>
 {% endblock Body %}

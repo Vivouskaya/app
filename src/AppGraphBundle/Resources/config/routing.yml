@@ -1,3 +1,0 @@
-app_graph_homepage:
-    path:     /graph
-    defaults: { _controller: AppGraphBundle:Default:chart }
